@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wario</title>
+    </head>
+
+<body>
+    <ul>
+    {% for note in notes %}
+  <li>  {{ notes }} </li>
+   {% endfor %}
+    </ul>
+    <form action="{{ url_for('notess') }}" method="POST">
+        <input type="text" name="note" placeholder="add a note here">
+        <button>ADD</button>
+    </form>
+</body>
+</html>
